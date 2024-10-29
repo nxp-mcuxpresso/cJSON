@@ -1,0 +1,77 @@
+---
+__hierarchy__:
+  tmp_common_cjson:
+    section-type: component
+  tmp_common_cjson_support:
+    section-type: component_support
+middleware.cjson.ui_control:
+  section-type: component_support
+  __requires__:
+  - board.evkmimxrt1050
+  - board.evkbimxrt1050
+  - board.sln_alexa_iot
+  - board.rdrw612bga
+  - board.rdrw612qfn
+  component_info:
+    common:
+      fixed_id: dave_gamble_cjson
+      ui_name: cjson
+      ui_description: cjson library
+      ui_category: Middleware
+      ui_control: true
+      ui_release_specific: true
+      ui_control_default: true
+      version: 1.0.0
+      component_set_path:
+        repo_base_path: middleware/cjson
+middleware.cjson:
+  section-type: component
+  meta-name: middleware.cjson
+  __requires__:
+  - middleware.cjson.ui_control
+  contents:
+    repo_base_path: middleware/cjson
+    project_base_path: cjson
+    cc-include:
+    - repo_relative_path: "./"
+      project_relative_path: inc
+    files:
+    - source: "*.h"
+      project_relative_path: inc
+    - source: "*.c"
+      project_relative_path: src
+    - source: CHANGELOG.md
+      hidden: true
+      type: doc
+    - source: LICENSE
+      hidden: true
+      type: doc
+    - source: README.md
+      hidden: true
+      type: doc
+    - source: CONTRIBUTORS.md
+      hidden: true
+      type: doc
+    - source: ChangeLogKSDK.txt
+      hidden: true
+      exclude: true
+  component_info:
+    common:
+      description: CJSON library
+      version: 1.7.4_rev0
+      type: middleware
+      change_log: "./ChangeLogKSDK.txt"
+      component_bundle: bundles.cjson
+      user_visible: true
+      full_name: Middleware cjson
+      manifest_name: cjson
+bundles.cjson:
+  section-type: component_support
+  bundle: true
+  contents: {}
+  component_info:
+    common:
+      full_name: CJSON library
+      class: JSON
+      version: 1.7.4
+      description: CJSON library

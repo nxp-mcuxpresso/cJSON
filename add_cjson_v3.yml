@@ -1,0 +1,97 @@
+---
+__hierarchy__:
+  tmp_common_cjson:
+    section-type: component
+    belong_to: set.middleware.cjson
+middleware.cjson:
+  section-type: component
+  meta-name: middleware.cjson
+  contents:
+    repo_base_path: middleware/cjson
+    project_base_path: cjson
+    cc-include:
+    - repo_relative_path: "./"
+      project_relative_path: inc
+    files:
+    - source: "*.h"
+      project_relative_path: inc
+    - source: "*.c"
+      project_relative_path: src
+    - source: CHANGELOG.md
+      hidden: true
+      type: doc
+    - source: LICENSE
+      hidden: true
+      type: doc
+    - source: README.md
+      hidden: true
+      type: doc
+    - source: CONTRIBUTORS.md
+      hidden: true
+      type: doc
+    - source: ChangeLogKSDK.txt
+      hidden: true
+      exclude: true
+  belong_to: set.middleware.cjson
+  section_info:
+    description: CJSON library
+    version: 1.7.4_rev0
+    type: middleware
+    user_visible: always
+    full_name: Middleware cjson
+    taxonomy:
+      csub: cjson
+      belong_to: cjson
+    display_name: cjson
+set.middleware.cjson:
+  section-type: set
+  belong_to: set.middleware.cjson
+  section_info:
+    fixed_id: dave_gamble_cjson
+    version: 1.0.0
+    display_name: cjson
+    description: cjson library
+    set_location:
+      repo_base_path: middleware/cjson
+    type: middleware
+    vendor: NXP
+    product:
+      kex_package:
+        kex_web_ui:
+          ui_control: true
+          ui_release_specific: true
+          ui_control_default: true
+          ui_category: Middleware
+        scr:
+        - scr.middleware.cjson
+      cmsis_pack:
+        vendor: NXP
+        supported: false
+        scr:
+        - scr.middleware.cjson
+    component_taxonomy:
+      cjson:
+        cclass: JSON
+        cgroup: CJSON library
+license.cjson:
+  section-type: license
+  belong_to: set.middleware.cjson
+  contents:
+    repo_base_path: middleware/cjson
+    files:
+    - source: LICENSE
+  section_info:
+    Outgoing License: MIT
+scr.middleware.cjson:
+  belong_to: set.middleware.cjson
+  section-type: scr
+  contents:
+    license:
+    - license.cjson
+    Name: CJSON
+    Version: 1.7.4
+    Format: source code
+    Description: CJSON - Ultralightweight JSON parser in ANSI C
+    Location: middleware/cjson
+    Origin: Dave Gamble
+    Url: https://github.com/DaveGamble/cJSON/releases/tag/v1.7.4

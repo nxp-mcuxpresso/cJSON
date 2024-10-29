@@ -1,0 +1,5 @@
+config MCUX_COMPONENT_middleware.cjson
+    bool "Enable middleware cjson"
+    default n
+    help
+        Enable middleware.cjson component
