@@ -8,5 +8,5 @@ Type of content: source code
 Description and comments: CJSON - Ultralightweight JSON parser in ANSI C
 Release Location: https://github.com/nxp-mcuxpresso/cjson
 Origin:
-      Dave Gamble (MIT) - https://github.com/DaveGamble/cJSON/releases/tag/v1.7.4
       NXP (MIT)
+      Dave Gamble (MIT) - https://github.com/DaveGamble/cJSON/releases/tag/v1.7.4
