@@ -2,7 +2,10 @@
 @page middleware_log Middleware Change Log
 
 @section Cjson CJSON for KSDK
-Current version is CJSON 1.7.18.
+Current version is CJSON 1.7.19.
+
+  - 1.7.19
+    - Upgraded to version 1.7.19.
 
   - 1.7.18
     - Upgraded to version 1.7.18. Changes when integrate with SDK are marked using the

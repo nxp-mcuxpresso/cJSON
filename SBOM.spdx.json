@@ -2,20 +2,20 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-05-29T02:39:30Z",
+    "created": "2025-09-24T06:59:08Z",
     "creators": [
       "Organization: NXP"
     ],
     "licenseListVersion": "3.20"
   },
-  "name": "cJSON-v25.06.00",
+  "name": "cJSON-v1.7.19",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://nxp.com/spdx/2c3e1edf-cbd7-4327-bdb5-c50c34636086",
+  "documentNamespace": "https://nxp.com/spdx/a4d5a791-04ac-4d56-ace9-542d5c80e30f",
   "packages": [
     {
-      "SPDXID": "SPDXRef-package-2c3e1edf-cbd7-4327-bdb5-c50c34636086",
+      "SPDXID": "SPDXRef-package-a4d5a791-04ac-4d56-ace9-542d5c80e30f",
       "name": "cJSON",
-      "versionInfo": "v25.06.00",
+      "versionInfo": "v1.7.19",
       "licenseConcluded": "(MIT)",
       "licenseDeclared": "(MIT)",
       "downloadLocation": "https://github.com/nxp-mcuxpresso/cJSON/",
@@ -25,39 +25,45 @@
       "filesAnalyzed": false
     },
     {
-      "SPDXID": "SPDXRef-package-b6e9484d-56f2-4ca1-bfab-fba2b91a0b99",
+      "SPDXID": "SPDXRef-package-a7d9f775-150c-4a9b-97ee-de1c30e09fb4",
       "name": "cJSON",
-      "versionInfo": "v1.7.18",
+      "versionInfo": "v1.7.19",
       "licenseConcluded": "MIT",
       "licenseDeclared": "MIT",
       "homepage": "https://github.com/DaveGamble/cJSON",
       "downloadLocation": "NOASSERTION",
+      "originator": "Organization: davegamble",
+      "supplier": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "SECURITY",
-          "referenceLocator": "cpe:2.3:a:cjson_project:cjson:1.7.18:*:*:*:*:*:*:*",
+          "referenceLocator": "cpe:2.3:a:cjson_project:cjson:1.7.19:*:*:*:*:*:*:*",
           "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/DaveGamble/cJSON@v1.7.19",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "13bdbf8b-0556-439e-9b76-e3c1250182c2",
+          "referenceType": "BlackDuck-ComponentOrigin"
         }
       ],
-      "filesAnalyzed": false,
-      "supplier": "NOASSERTION"
+      "filesAnalyzed": false
     }
   ],
   "relationships": [
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-package-2c3e1edf-cbd7-4327-bdb5-c50c34636086"
+      "relatedSpdxElement": "SPDXRef-package-a4d5a791-04ac-4d56-ace9-542d5c80e30f"
     },
     {
-      "spdxElementId": "SPDXRef-package-2c3e1edf-cbd7-4327-bdb5-c50c34636086",
-      "relationshipType": "CONTAINS",
-      "relatedSpdxElement": "SPDXRef-package-b6e9484d-56f2-4ca1-bfab-fba2b91a0b99"
-    },
-    {
-      "spdxElementId": "SPDXRef-package-2c3e1edf-cbd7-4327-bdb5-c50c34636086",
+      "spdxElementId": "SPDXRef-package-a4d5a791-04ac-4d56-ace9-542d5c80e30f",
       "relationshipType": "DYNAMIC_LINK",
-      "relatedSpdxElement": "SPDXRef-package-b6e9484d-56f2-4ca1-bfab-fba2b91a0b99"
+      "relatedSpdxElement": "SPDXRef-package-a7d9f775-150c-4a9b-97ee-de1c30e09fb4"
     }
   ]
 }

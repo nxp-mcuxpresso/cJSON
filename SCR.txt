@@ -1,7 +1,7 @@
 NXP Software Content Register
 
 Release Name: cjson
-Version: 1.7.18
+Version: 1.7.19
 Outgoing License: MIT
 License File: LICENSE
 Type of content: source code
@@ -9,4 +9,4 @@ Description and comments: CJSON - Ultralightweight JSON parser in ANSI C
 Release Location: https://github.com/nxp-mcuxpresso/cjson
 Origin:
       NXP (MIT)
-      Dave Gamble and cJSON (MIT) - https://github.com/DaveGamble/cJSON/releases/tag/v1.7.18
+      Dave Gamble and cJSON (MIT) - https://github.com/DaveGamble/cJSON/releases/tag/v1.7.19
