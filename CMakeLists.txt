@@ -9,4 +9,12 @@ if (CONFIG_MCUX_COMPONENT_middleware.cjson)
     mcux_add_include(
         INCLUDES ./
     )
+
+    mcux_add_iar_configuration(
+        CC "--diag_suppress=Pa084"
+    )
+
+    mcux_add_mdk_configuration(
+        CC "-Wno-nan-infinity-disabled"
+    )
 endif()
