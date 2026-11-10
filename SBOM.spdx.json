@@ -2,11 +2,11 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-09-24T06:59:08Z",
+    "created": "2026-11-10T02:34:58Z",
     "creators": [
       "Organization: NXP"
     ],
-    "licenseListVersion": "3.20"
+    "licenseListVersion": "3.28"
   },
   "name": "cJSON-v1.7.19",
   "dataLicense": "CC0-1.0",
@@ -25,14 +25,14 @@
       "filesAnalyzed": false
     },
     {
-      "SPDXID": "SPDXRef-package-a7d9f775-150c-4a9b-97ee-de1c30e09fb4",
+      "SPDXID": "SPDXRef-package-ed323e76-cf74-4b54-9dc9-4b920f18f259",
       "name": "cJSON",
-      "versionInfo": "v1.7.19",
+      "versionInfo": "1.7.19",
       "licenseConcluded": "MIT",
       "licenseDeclared": "MIT",
       "homepage": "https://github.com/DaveGamble/cJSON",
       "downloadLocation": "NOASSERTION",
-      "originator": "Organization: davegamble",
+      "originator": "Organization: unknown",
       "supplier": "NOASSERTION",
       "externalRefs": [
         {
@@ -41,14 +41,9 @@
           "referenceType": "cpe23Type"
         },
         {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:github/DaveGamble/cJSON@v1.7.19",
-          "referenceType": "purl"
-        },
-        {
-          "referenceCategory": "OTHER",
-          "referenceLocator": "13bdbf8b-0556-439e-9b76-e3c1250182c2",
-          "referenceType": "BlackDuck-ComponentOrigin"
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:davegamble:cjson:1.7.19:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
         }
       ],
       "filesAnalyzed": false
@@ -62,8 +57,8 @@
     },
     {
       "spdxElementId": "SPDXRef-package-a4d5a791-04ac-4d56-ace9-542d5c80e30f",
-      "relationshipType": "DYNAMIC_LINK",
-      "relatedSpdxElement": "SPDXRef-package-a7d9f775-150c-4a9b-97ee-de1c30e09fb4"
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-ed323e76-cf74-4b54-9dc9-4b920f18f259"
     }
   ]
 }
